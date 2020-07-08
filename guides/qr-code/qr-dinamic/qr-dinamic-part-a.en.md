@@ -3,7 +3,7 @@ indexable: false
 ---
 
 <!-- -->
-> WARNING
+> WARNING.
 >
 
 
