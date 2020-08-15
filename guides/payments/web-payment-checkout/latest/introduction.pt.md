@@ -1,5 +1,8 @@
 # O que é o Checkout Pro?
 
+Para ter em conta:
+Não se esqueça de ler todos os requisitos antes de integrar
+
 O Checkout Pro é a integração que **te permite cobrar através do nosso formulário web de qualquer dispositivo** de forma simples, rápida e segura.
 
 ![Basic-Checkout](/images/web-payment-checkout/cho-introduction-br.png)

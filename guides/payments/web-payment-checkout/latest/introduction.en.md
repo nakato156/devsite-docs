@@ -1,4 +1,6 @@
 # What's Checkout Pro?
+To keep in mind:
+Do not forget to read all the requirements prior to integrating.
 
 Checkout Pro is an integration that allows you to **charge your customers through our web form from any device in a simple, fast and secure way.**
 
