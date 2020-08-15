@@ -7,6 +7,9 @@ sites_supported:
 
 Mercado Pago te brinda herramientas necesarias para que puedas cobrar a través de nuestro formulario web de manera simple, rápida y segura.
 
+Para tener en cuenta:
+No olvides leer todos los requisitos previo a integrar.
+
 Trabajamos para que tus usuarios tengan la mejor experiencia de pago ofreciendo:  
 
 * Compra con **un click**: Recordamos los datos de tus usuarios, permitiendo pagar sólo ingresando el código de seguridad de la tarjeta.
