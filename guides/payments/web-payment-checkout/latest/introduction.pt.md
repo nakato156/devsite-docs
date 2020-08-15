@@ -1,7 +1,10 @@
 # O que é o Checkout Pro?
 
-Para ter em conta:
-Não se esqueça de ler todos os requisitos antes de integrar
+>AVISO
+>
+>Título Para ter em conta:
+>
+> Corpo da nota Não se esqueça de ler todos os requisitos antes de integrar
 
 O Checkout Pro é a integração que **te permite cobrar através do nosso formulário web de qualquer dispositivo** de forma simples, rápida e segura.
 
