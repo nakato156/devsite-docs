@@ -7,6 +7,10 @@ sites_supported:
 
 O Mercado Pago fornece as ferramentas necessárias para que você possa receber pagamentos através do nosso formulário web de forma simples, rápida e segura.
 
+
+Para ter em conta:
+Não se esqueça de ler todos os requisitos antes de integrar.
+
 Trabalhamos para que seus usuários tenham a melhor experiência de pagamento oferecendo:
 
 * Compra com **um clique**: Os dados de seus usuários ficam salvos e, na hora do pagamento, basta que digitem o código de segurança do cartão.

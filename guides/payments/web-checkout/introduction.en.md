@@ -7,6 +7,10 @@ sites_supported:
 
 Mercado Pago provides you with the necessary tools so that you can receive payments using our web form in a simple, fast and safe way.
 
+
+To keep in mind:
+Do not forget to read all the requirements prior to integrating.
+
 We work to ensure that your users have the best payment experience by offering:
 
 * **One-click buy**: We save your users’ payment details, so that they can make the payment by just re-entering the security code of their credit card.
