@@ -80,6 +80,7 @@ Visa | 4509 9535 6623 3704 | 123 | 11/25
 American Express | 3711 8030 3257 522 | 1234 | 11/25
 
 To **test different payment results,** complete the information you want in the name of the cardholder:
+
 ------------
 
 ----[mlb]---- 
@@ -92,6 +93,7 @@ Visa | 4235 6477 2802 5682 | 123 | 11/25
 American Express | 3753 6515 3556 885 | 1234 | 11/25
 
 To **test different payment results,** complete the information you want in the name of the cardholder:
+
 ------------
 
 - APRO: Payment approved.
