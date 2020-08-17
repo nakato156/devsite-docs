@@ -52,6 +52,8 @@ curl -X POST \
 > * Para criar pagamentos de teste te recomendamos usar valores baixos.
 > * Os valores devem respeitar os ----[mla]---- [valores mínimos e máximos](https://www.mercadopago.com.ar/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlm]---- [valores mínimos e máximos](hhttps://www.mercadopago.com.mx/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlu]---- [valores mínimos e máximos](hhttps://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mco]---- [valores mínimos e máximos](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mpe]---- [valores mínimos e máximos](https://www.mercadopago.com.pe/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlc]---- [valores mínimos e máximos](https://www.mercadopago.cl/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlb]---- [valores mínimos e máximos](https://www.mercadopago.com.br/ajuda/minimo-maximo-posso-pagar_324) ------------ para cada meio de pagamento.
 
+----[mla, mlm, mlc, mco, mlu, mpe]----
+
 ## Teste o fluxo de pagamento
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Configure a integração com os dados do seu usuário vendedor
@@ -68,7 +70,6 @@ Inicie sua integração configurada com as credenciais do seu usuário de teste 
 1. Insira o e-mail do seu usuário de teste comprador.
 1. Confirme a compra, e pronto!
 
-----[mla, mlm, mlc, mco, mlu, mpe]----
 ## Cartões de teste 
 
 Cartão | Número | Código de segurança | Data de vencimento
@@ -79,9 +80,35 @@ American Express | 3711 8030 3257 522 | 1234 | 11/25
 
 Para **testar resultados diferentes de pagamento**, complete o dado que queira no nome do titular do cartão:
 
+- APRO: Pagamento aprovado.
+- CONT: Pagamento pendente.
+- OTHE: Recusado por erro geral.
+- CALL: Recusado com validação para autorizar.
+- FUND: Recusado por quantia insuficiente.
+- SECU: Recusado por código de segurança inválido.
+- EXPI: Recusado por problema com a data de vencimento.
+- FORM: Recusado por erro no formulário.
+
 ------------
 
 ----[mlb]---- 
+
+## Teste o fluxo de pagamento
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Configure a integração com os dados do seu usuário vendedor
+
+Configure a [chave pública de teste]([FAKER][CREDENTIALS][URL]) do seu usuário vendedor no frontend da sua aplicação e a [chave privada de teste]([FAKER][CREDENTIALS][URL]) no seu backend.
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Realize um pagamento com seu usuário comprador
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Testes com cartão de crédito
+
+Inicie sua integração configurada com as credenciais do seu usuário de teste vendedor:
+
+1. Preencha os dados de um [cartão de teste](#bookmark_cartões_de_teste).
+1. Insira o e-mail do seu usuário de teste comprador.
+1. Confirme a compra, e pronto!
+
 ## Cartões de teste 
 
 Cartão | Número | Código de segurança | Data de vencimento
@@ -92,8 +119,6 @@ American Express | 3753 6515 3556 885 | 1234 | 11/25
 
 Para **testar resultados diferentes de pagamento**, complete o dado que queira no nome do titular do cartão:
 
-------------
-
 - APRO: Pagamento aprovado.
 - CONT: Pagamento pendente.
 - OTHE: Recusado por erro geral.
@@ -102,6 +127,8 @@ Para **testar resultados diferentes de pagamento**, complete o dado que queira n
 - SECU: Recusado por código de segurança inválido.
 - EXPI: Recusado por problema com a data de vencimento.
 - FORM: Recusado por erro no formulário.
+
+------------
 
 > WARNING
 >

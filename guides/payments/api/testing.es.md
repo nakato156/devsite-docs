@@ -53,6 +53,8 @@ curl -X POST \
 > * Para hacer pagos de prueba te recomendamos usar montos bajos.
 > * Los montos deben respetar los ----[mla]---- [valores mínimos y máximos](https://www.mercadopago.com.ar/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlm]---- [valores mínimos y máximos](https://www.mercadopago.com.mx/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlu]---- [valores mínimos y máximos](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mco]---- [valores mínimos y máximos](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mpe]---- [valores mínimos y máximos](https://www.mercadopago.com.pe/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlc]---- [valores mínimos y máximos](https://www.mercadopago.cl/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlb]---- [valores mínimos y máximos](https://www.mercadopago.com.br/ajuda/minimo-maximo-posso-pagar_324) ------------ para cada medio de pago.
 
+----[mla, mlm, mlc, mco, mlu, mpe]----
+
 ## Prueba el flujo de pago
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Configura la integración con los datos de tu usuario vendedor
@@ -69,7 +71,6 @@ Inicia tu integración configurada con las credenciales de tu usuario de prueba 
 1. Ingresa el e-mail de tu usuario de prueba comprador.
 1. Confirma la compra, ¡y listo!
 
-----[mla, mlm, mlc, mco, mlu, mpe]----
 ## Tarjetas de prueba 
 
 Tarjeta | Número | CVV | Fecha de vencimiento
@@ -80,9 +81,35 @@ American Express | 3711 8030 3257 522 | 1234 | 11/25
 
 Para **probar distintos resultados de pago**, completa el dato que quieras en el nombre del titular de la tarjeta:
 
+- APRO: Pago aprobado.
+- CONT: Pago pendiente.
+- OTHE: Rechazado por error general.
+- CALL: Rechazado con validación para autorizar.
+- FUND: Rechazado por monto insuficiente.
+- SECU: Rechazado por código de seguridad inválido.
+- EXPI: Rechazado por problema con la fecha de expiración.
+- FORM: Rechazado por error en formulario.
+
 ------------
 
 ----[mlb]---- 
+
+## Prueba el flujo de pago
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Configura la integración con los datos de tu usuario vendedor
+
+Configura la [clave pública de prueba]([FAKER][CREDENTIALS][URL]) de tu usuario vendedor en el frontend de tu aplicación y la [clave privada de prueba]([FAKER][CREDENTIALS][URL]) en el backend.
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Realiza un pago con tu usuario comprador
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pruebas con tarjeta de crédito
+
+Inicia tu integración configurada con las credenciales de tu usuario de prueba vendedor:
+
+1. Completa los datos de una [tarjeta de prueba](#bookmark_tarjetas_de_prueba).
+1. Ingresa el e-mail de tu usuario de prueba comprador.
+1. Confirma la compra, ¡y listo!
+
 ## Tarjetas de prueba 
 
 Tarjeta | Número | CVV | Fecha de vencimiento
@@ -93,8 +120,6 @@ American Express | 3753 6515 3556 885 | 1234 | 11/25
 
 Para **probar distintos resultados de pago**, completa el dato que quieras en el nombre del titular de la tarjeta:
 
-------------
-
 - APRO: Pago aprobado.
 - CONT: Pago pendiente.
 - OTHE: Rechazado por error general.
@@ -103,6 +128,8 @@ Para **probar distintos resultados de pago**, completa el dato que quieras en el
 - SECU: Rechazado por código de seguridad inválido.
 - EXPI: Rechazado por problema con la fecha de expiración.
 - FORM: Rechazado por error en formulario.
+
+------------
 
 > WARNING
 >

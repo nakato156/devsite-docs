@@ -54,6 +54,47 @@ curl -X POST \
 > * To make test payments we recommend using low amounts.
 > * Amounts should be within the ----[mla]---- [minimum and maximum values](https://www.mercadopago.com.ar/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlm]---- [minimum and maximum values](https://www.mercadopago.com.mx/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlu]---- [minimum and maximum values](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mco]---- [minimum and maximum values](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mpe]---- [minimum and maximum values](https://www.mercadopago.com.pe/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlc]---- [minimum and maximum values](https://www.mercadopago.cl/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlb]---- [minimum and maximum values](https://www.mercadopago.com.br/ajuda/minimo-maximo-posso-pagar_324) ------------ for each payment method.
 
+----[mla, mlm, mlc, mco, mlu, mpe]----
+
+## Test the payment flow
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Configure the integration with seller user data
+
+Configure your seller user's [test public key]([FAKER][CREDENTIALS][URL]) at your application frontend, and the [test private key]([FAKER][CREDENTIALS][URL]) at the backend.
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Make a payment with your buyer user
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credit card tests
+
+Start your integration with your test seller user credentials:
+
+1. Fill out [test card data](#bookmark_test_cards).
+1. Enter your test buyer user e-mail.
+1. Confirm purchase. Done!
+ 
+## Test Cards
+
+Card | Number | CVV | Expiration Date
+-------------- | -------------- | -------------- | --------------
+Mastercard | 5031 7557 3453 0604 | 123 | 11/25
+Visa | 4509 9535 6623 3704 | 123 | 11/25
+American Express | 3711 8030 3257 522 | 1234 | 11/25
+
+To **test different payment results,** complete the information you want in the name of the cardholder:
+
+- APRO: Payment approved.
+- CONT: Payment pending.
+- OTHE: Rejected by general error.
+- CALL: Rejected with validation to authorize.
+- FUND: Rejected for insufficient amount.
+- SECU: Rejected by invalid security code.
+- EXPI: Rejected due to problem with expiration date.
+- FORM: Rejected by error in the form.
+
+------------
+
+----[mlb]---- 
+
 ## Test the payment flow
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Configure the integration with seller user data
@@ -70,20 +111,6 @@ Start your integration with your test seller user credentials:
 1. Enter your test buyer user e-mail.
 1. Confirm purchase. Done!
 
-----[mla, mlm, mlc, mco, mlu, mpe]---- 
-## Test Cards
-
-Card | Number | CVV | Expiration Date
--------------- | -------------- | -------------- | --------------
-Mastercard | 5031 7557 3453 0604 | 123 | 11/25
-Visa | 4509 9535 6623 3704 | 123 | 11/25
-American Express | 3711 8030 3257 522 | 1234 | 11/25
-
-To **test different payment results,** complete the information you want in the name of the cardholder:
-
-------------
-
-----[mlb]---- 
 ## Test Cards
 
 Card | Number | CVV | Expiration Date
@@ -94,8 +121,6 @@ American Express | 3753 6515 3556 885 | 1234 | 11/25
 
 To **test different payment results,** complete the information you want in the name of the cardholder:
 
-------------
-
 - APRO: Payment approved.
 - CONT: Payment pending.
 - OTHE: Rejected by general error.
@@ -104,6 +129,8 @@ To **test different payment results,** complete the information you want in the 
 - SECU: Rejected by invalid security code.
 - EXPI: Rejected due to problem with expiration date.
 - FORM: Rejected by error in the form.
+
+------------
 
 > WARNING
 >
