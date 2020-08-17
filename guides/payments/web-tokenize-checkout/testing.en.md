@@ -60,11 +60,24 @@ curl -X POST \
 You have a pair of [test credentials]([FAKER][CREDENTIALS][URL]) which will allow you to test the whole integration based on an exact replica of the Production Mode, being able to simulate transactions using the test cards:
 
 
+----[mla, mlm, mlc, mco, mlu, mpe]---- 
+
 Card | Number | CVV | Expiration Date
 ------------ | ------------- | ------------- | -------------
 Mastercard | 5031 7557 3453 0604 | 123 | 11/25
-Visa | 4170 0688 1010 8020 | 123 | 11/25
+Visa | 4509 9535 6623 3704 | 123 | 11/25
 American Express | 3711 8030 3257 522 | 1234 | 11/25
+
+------------
+----[mlb]---- 
+
+Card | Number | CVV | Expiration Date
+------------ | ------------- | ------------- | -------------
+Mastercard | 5031 4332 1540 6351 | 123 | 11/25
+Visa | 4235 6477 2802 5682 | 123 | 11/25
+American Express | 3753 6515 3556 885 | 1234 | 11/25
+
+------------
 
 You can also [use test credit cards from local payment methods in each country](https://www.mercadopago.com.ar/developers/en/guides/localization/local-cards).
 

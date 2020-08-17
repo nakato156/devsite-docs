@@ -70,12 +70,24 @@ Inicie sua integração configurada com as credenciais do seu usuário de teste 
 
 ## Cartões de teste
 
-Cartão | Número | CVV | Data de vencimento
+----[mla, mlm, mlc, mco, mlu, mpe]---- 
+
+Cartão | Número | Código de segurança | Data de vencimento
 ------------ | ------------- | ------------- | -------------
 Mastercard | 5031 7557 3453 0604 | 123 | 11/25
-Visa | 4170 0688 1010 8020 | 123 | 11/25
+Visa | 4509 9535 6623 3704 | 123 | 11/25
 American Express | 3711 8030 3257 522 | 1234 | 11/25
 
+------------
+----[mlb]---- 
+
+Cartão | Número | Código de segurança | Data de vencimento
+------------ | ------------- | ------------- | -------------
+Mastercard | 5031 4332 1540 6351 | 123 | 11/25
+Visa | 4235 6477 2802 5682 | 123 | 11/25
+American Express | 3753 6515 3556 885 | 1234 | 11/25
+
+------------
 Para **testar resultados diferentes de pagamento**, complete o dado que queira no nome do titular do cartão:
 
 - APRO: Pagamento aprovado.
