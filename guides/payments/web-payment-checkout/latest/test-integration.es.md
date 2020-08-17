@@ -82,22 +82,19 @@ Al abrir el checkout creado con los datos de tu usuario vendedor:
 ## Tarjetas de prueba
 
 ----[mla, mlm, mlc, mco, mlu, mpe]---- 
-
 Tarjeta | Número | CVV | Fecha de vencimiento
 ------------ | ------------- | ------------- | -------------
 Mastercard | 5031 7557 3453 0604 | 123 | 11/25
 Visa | 4509 9535 6623 3704 | 123 | 11/25
 American Express | 3711 8030 3257 522 | 1234 | 11/25
-
 ------------
-----[mlb]---- 
 
+----[mlb]---- 
 Tarjeta | Número | CVV | Fecha de vencimiento
 ------------ | ------------- | ------------- | -------------
 Mastercard | 5031 4332 1540 6351 | 123 | 11/25
 Visa | 4235 6477 2802 5682 | 123 | 11/25
 American Express | 3753 6515 3556 885 | 1234 | 11/25
-
 ------------
 
 Para **probar distintos resultados de pago**, completa el dato que quieras en el nombre del titular de la tarjeta:
