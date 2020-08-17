@@ -69,9 +69,8 @@ Inicia tu integración configurada con las credenciales de tu usuario de prueba 
 1. Ingresa el e-mail de tu usuario de prueba comprador.
 1. Confirma la compra, ¡y listo!
 
-
-## Tarjetas de prueba
-----[mla, mlm, mlc, mco, mlu, mpe]---- 
+----[mla, mlm, mlc, mco, mlu, mpe]----
+## Tarjetas de prueba 
 
 Tarjeta | Número | CVV | Fecha de vencimiento
 -------------- | -------------- | -------------- | --------------
@@ -79,9 +78,11 @@ Mastercard | 5031 7557 3453 0604 | 123 | 11/25
 Visa | 4509 9535 6623 3704 | 123 | 11/25
 American Express | 3711 8030 3257 522 | 1234 | 11/25
 
+Para **probar distintos resultados de pago**, completa el dato que quieras en el nombre del titular de la tarjeta:
 ------------
 
 ----[mlb]---- 
+## Tarjetas de prueba 
 
 Tarjeta | Número | CVV | Fecha de vencimiento
 -------------- | -------------- | -------------- | --------------
@@ -89,9 +90,8 @@ Mastercard | 5031 4332 1540 6351 | 123 | 11/25
 Visa | 4235 6477 2802 5682 | 123 | 11/25
 American Express | 3753 6515 3556 885 | 1234 | 11/25
 
-------------
-
 Para **probar distintos resultados de pago**, completa el dato que quieras en el nombre del titular de la tarjeta:
+------------
 
 - APRO: Pago aprobado.
 - CONT: Pago pendiente.
