@@ -105,15 +105,6 @@ $payment->refund();
 
 ?>
 ```
-```node
-mercadopago.payment.refund(payment_id)
-  .then(function (response) {
-    //Process response...
-  })
-  .catch(function (error) {
-    //Handle the error ...
-  });
-```
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
@@ -164,13 +155,9 @@ Payment payment = Payment.findById(paymentId);
 payment.refund(10.5);
 ```
 ```node
-mercadopago.payment.refundPartial({ payment_id: id, amount: Number(amount) })
-  .then(function (response) {
-    //Process response...
-  })
-  .catch(function (error) {
-    //Handle the error ...
-  });
+mercadopago.payment.refund(paymentId).then(function(data) {}
+  //Do Stuff ..
+});
 ```
 ```ruby
 payment = MercadoPago::Payment.find_by_id(paymnentId)
