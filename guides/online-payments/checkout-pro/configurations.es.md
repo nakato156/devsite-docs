@@ -346,9 +346,9 @@ Si se quiere habilitar el pago de una preferencia con un tiempo de duración det
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
 
-### Descripción en el resumen de la tarjeta
+### Descripción en el resumen de la compra
 
-Puedes enviar el nombre de tu negocio en el atributo _`statement_descriptor`_ para que en el resumen de la tarjeta de tu comprador aparezca el nombre de tu negocio y de esta manera sepa donde realizó la compra.
+Puedes enviar el nombre de tu negocio en el atributo _`statement_descriptor`_ para que en el resumen de la compra de tu comprador aparezca el nombre de tu negocio y de esta manera sepa donde realizó la compra.
 
 ```json
 "statement_descriptor": "MINEGOCIO"
@@ -713,7 +713,7 @@ Agrega el código en la preferencia y reemplaza los valores CONVERSION\_ID y CON
 ===
 
 <?php
-  // Crear un objeto preferencia
+  // Crear un objeto de preferencia
   $preference = new MercadoPago\Preference();
  
   // Asocia tu etiqueta
